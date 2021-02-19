@@ -1,14 +1,16 @@
-# Welcome to your CDK TypeScript project!
+# Proyecto realizado en el worshop de Alegra de CDK
 
-This is a blank project for TypeScript development with CDK.
+Para usar este proyecto debes crear un archivo .env basado en el archivo .env.example dónde
+definiras el id y la region de la cuenta de AWS dónde vamos a desplegar nuestro proyecto
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Comandos utiles
 
-## Useful commands
+- `npm run deploy` despliega todos los stacks en la cuenta destino
+- `npm run destroy` destruye todos los stacks de la cuenta destino
+- `npm run diff` retorna las diferencias con respecto a los stacks
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## ¿Quieres prácticar?
+
+- Intenta crear un endpoint que permita actualizar un jugador del equipo.
+- Crea una notificación SNS que se suscriba a tu correo de alegra y se dispare cada vez
+  que se agregue un nuevo jugador al equipo.
